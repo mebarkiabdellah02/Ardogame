@@ -1,32 +1,32 @@
 # Ardogame                              
-![Description of image](https://miro.medium.com/v2/resize:fit:1032/1*OSbJK0NpxjmNXQEnQYVqmg.gif)
+![Description of image](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZulwwfJK_GxBJZKrEA3JfHk24SFMwdUqqC7vrHcsAsU3v6OPDCWqOb9Q4OKZMtxUSHBarGZCRONi8DaI7FRNtP2UkV0oFX41suBPQIDlZRnbRtRBj51bni0QVnpGk-f1uXd4aJZQjCwY/s1264/Space.jpg)
 ## Description
-PANGDUINO:
+AstroDash:
 
 Concept:
-We created a small Arduino game where the Arduino handles all the game logic, including the movement of the bouncing object and the timing of the jumps.
+We created a small Arduino game where the Arduino handles all the game logic, including the movement of the meteors and the timing of the Dash.
 
 The goal of the game is simple:
-we have to move our hand over the ultrasonic sensor\potentiometer at the right moment to keep the object bouncing.
-If our timing is correct, the object continues bouncing.
-If we move too early or too late, the bounce fails and the game ends.
+we have to move our hand over the ultrasonic sensor\potentiometer at the right moment to keep the Spaceship moving.
+If our timing is correct, the spaceship continues moving.
+If we move too early or too late, the ship crashes and the game ends.
 
-As the game progresses, the bouncing speed gradually increases, making the timing more challenging.
-Our score is the number of successful bounces we achieve before the game ends.
+As the game progresses, the meteors speed gradually increases, making the timing more challenging.
+Our score is the number of seconds we can stay alive before the game ends.
 
 It’s a fast and fun reaction game that tests precision and timing, with the Arduino controlling the logic, the ultrasonic sensor\potentiometer detecting our actions, and the phone screen displaying the game.
 
-### 🏓 Arduino-Controlled Pong Game (Android Edition)
-Play Pong on your phone using just your hand!
+### 🪨 Arduino-Controlled meteor Dodge Game (Android Edition)
+Play AstroDash on your phone using just your hand!
 
 ### 📌 About the Project
 
-This project is a modern twist on the classic Pong game, now fully playable on Android devices.
-The paddle is controlled by your hand via an ultrasonic sensor\potentiometer connected to an Arduino Uno, which communicates directly with your phone over USB serial.
+This project is a modern twist on the classic Meteor Dodge Game, now fully playable on Android devices.
+The spaceship is controlled by your hand via an ultrasonic sensor\potentiometer connected to an Arduino Uno, which communicates directly with your phone over USB serial.
 
 ✔ No keyboard or touchscreen needed
 
-✔ Real-time hand tracking for smooth paddle control
+✔ Real-time hand tracking for smooth control
 
 ✔ Educational project for Arduino and mobile app development
 
@@ -37,19 +37,19 @@ Hand movement is detected by the HC-SR04 ultrasonic sensor\or using the potentio
 
 Arduino Uno reads the distance\the value and sends it over USB serial to the Android phone
 
-The Android app reads the serial data and moves the paddle on screen in real time.
+The Android app reads the serial data and moves the spaceship on screen in real time.
 
-The game runs like classic Pong, including ball movement, collisions, and scoring.
+The game runs like classic Meteor Dodging Game, including ship and meteor movement, collisions, and scoring.
 
 ### ✨ Features
 
-🖐️ Hand-controlled paddle movement
+🖐️ Hand-controlled ship movement
 
 📱 Runs directly on Android
 
 🔌 USB Serial communication
 
-🎨 Smooth graphics inside your app
+🎨 Smooth graphics inside our app
 
 🧪 Educational — ideal for learning Arduino, sensors, and Android development
 
@@ -68,11 +68,13 @@ Jumper wires
 
 Android phone
 
-App installed (APK from your project)
+App Developped (APK from your project)
 
 ### ⚡ Wiring Overview
 
-<div align="center"> <img src="https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2013/11/ultrasonic-sensor-with-arduino-hc-sr04.jpg?resize=828%2C386&quality=100&strip=all&ssl=1" width="500"> </div>
+<div align="left"> <img src="https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2013/11/ultrasonic-sensor-with-arduino-hc-sr04.jpg?resize=828%2C386&quality=100&strip=all&ssl=1" width="500"> </div>
+
+<div align="right"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvoDYQRg3Vpmevni9SsJnvbCFMK4TLxAazyQ&s" width="500"> </div>
 
 HC-SR04\Potentiometer → Arduino Uno
 
@@ -88,7 +90,7 @@ ECHO	D10
 
 ### 🧩 System Architecture
 
-Hand → Ultrasonic Sensor → Arduino Uno → USB Serial → Android App → Paddle Movement
+Hand → Ultrasonic Sensor\Potentiometer → Arduino Uno → USB Serial → Android App → Spaceship Movement
 
 ### 💻 Arduino Code (Uno)
 
@@ -96,9 +98,9 @@ Hand → Ultrasonic Sensor → Arduino Uno → USB Serial → Android App → Pa
 
 The app reads serial data from Arduino Uno via USB OTG.
 
-Paddle moves horizontally according to hand distance\ turning degree.
+Spaceship moves horizontally according to hand distance\ turning degree.
 
-Ball movement and collisions are handled inside the app.
+Meteors movement and collisions are handled inside the app.
 
 ⚠️ On first connection, the app may require USB permission to access the Arduino.
 
@@ -112,7 +114,7 @@ Install your Android APK on the phone.
 
 Open the app and grant USB permission.
 
-Move your hand in front of the sensor to control the paddle (control the potentiometer)
+Move your hand in front of the sensor\ use it to turn the potentiometer to control the spaceship
 
 ### 👥 Team Members + roles
 
