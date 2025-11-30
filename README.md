@@ -7,14 +7,14 @@ Concept:
 We created a small Arduino game where the Arduino handles all the game logic, including the movement of the bouncing object and the timing of the jumps.
 
 The goal of the game is simple:
-we have to move our hand over the ultrasonic sensor at the right moment to keep the object bouncing.
+we have to move our hand over the ultrasonic sensor\potentiometer at the right moment to keep the object bouncing.
 If our timing is correct, the object continues bouncing.
 If we move too early or too late, the bounce fails and the game ends.
 
 As the game progresses, the bouncing speed gradually increases, making the timing more challenging.
 Our score is the number of successful bounces we achieve before the game ends.
 
-It’s a fast and fun reaction game that tests precision and timing, with the Arduino controlling the logic, the ultrasonic sensor detecting our actions, and the phone screen displaying the game.
+It’s a fast and fun reaction game that tests precision and timing, with the Arduino controlling the logic, the ultrasonic sensor\potentiometer detecting our actions, and the phone screen displaying the game.
 
 ### 🏓 Arduino-Controlled Pong Game (Android Edition)
 Play Pong on your phone using just your hand!
@@ -22,7 +22,7 @@ Play Pong on your phone using just your hand!
 ### 📌 About the Project
 
 This project is a modern twist on the classic Pong game, now fully playable on Android devices.
-The paddle is controlled by your hand via an ultrasonic sensor connected to an Arduino Uno, which communicates directly with your phone over USB serial.
+The paddle is controlled by your hand via an ultrasonic sensor\potentiometer connected to an Arduino Uno, which communicates directly with your phone over USB serial.
 
 ✔ No keyboard or touchscreen needed
 
@@ -33,9 +33,9 @@ The paddle is controlled by your hand via an ultrasonic sensor connected to an A
 
 ### 🎮 How It Works
 
-Hand movement is detected by the HC-SR04 ultrasonic sensor.
+Hand movement is detected by the HC-SR04 ultrasonic sensor\or using the potentiometer , turning it will make it move.
 
-Arduino Uno reads the distance and sends the value over USB serial to the Android phone.
+Arduino Uno reads the distance\the value and sends it over USB serial to the Android phone
 
 The Android app reads the serial data and moves the paddle on screen in real time.
 
@@ -60,7 +60,7 @@ The game runs like classic Pong, including ball movement, collisions, and scorin
 
 Arduino Uno
 
-HC-SR04 ultrasonic sensor
+HC-SR04 ultrasonic sensor\ Potentiometer
 
 USB OTG cable (Arduino → Phone)
 
@@ -74,9 +74,9 @@ App installed (APK from your project)
 
 <div align="center"> <img src="https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2013/11/ultrasonic-sensor-with-arduino-hc-sr04.jpg?resize=828%2C386&quality=100&strip=all&ssl=1" width="500"> </div>
 
-HC-SR04 → Arduino Uno
+HC-SR04\Potentiometer → Arduino Uno
 
-HC-SR04 Pin	Arduino Pin
+HC-SR04\Potentiometer Pin	Arduino Pin
 
 VCC	5V
 
@@ -96,7 +96,7 @@ Hand → Ultrasonic Sensor → Arduino Uno → USB Serial → Android App → Pa
 
 The app reads serial data from Arduino Uno via USB OTG.
 
-Paddle moves horizontally according to hand distance.
+Paddle moves horizontally according to hand distance\ turning degree.
 
 Ball movement and collisions are handled inside the app.
 
@@ -112,33 +112,24 @@ Install your Android APK on the phone.
 
 Open the app and grant USB permission.
 
-Move your hand in front of the sensor to control the paddle!
+Move your hand in front of the sensor to control the paddle (control the potentiometer)
 
-### 👥 Team Members
+### 👥 Team Members + roles
 
-#### Mebarki abdellah
+#### Mebarki abdellah (GitHub Organisation)
 
-#### Benmessaoud razik
+#### Benmessaoud razik (Project Manager)
 
-#### Aissani Anir
+#### Aissani Anir (Hardware Specialist)
 
-#### Saighi Abd El Moumene
+#### Saighi Abd El Moumene (Software Specialist)
 
-#### Akkouche Yakoub
+#### Akkouche Yakoub (Game Designer)
+
+* ‼️ Note : EVERY MEMBER OF THE PROJECT DID CONTRIBUTE IN EVERY ASPECT OF THE PROJECT.
 
 ### 📄 License
 
 This project is released under the Academic & Educational Use License (AEUL).
 See the LICENSE file for full details.
 
-### 🙌 Credits
-
-Arduino open-source hardware
-
-HC-SR04 sensor tutorials
-
-Android USB Serial libraries
-
-Team members who contributed to the project
-
-Teachers/mentors who supervised the project
