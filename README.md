@@ -1,5 +1,5 @@
 # Ardogame                              
-![Description of image](./screenshot.jpg)
+![Description of image](./screen.jpg)
 ## Description
 AstroDash:
 
